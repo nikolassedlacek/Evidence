@@ -1,0 +1,13 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Ok.
+2. Dodržení principů SRP a SoC - Ve třídě SpravaPojistenych, která ma na starost správu dat vypisuje metoda zobrazSeznamPojistenych(), měla by pouze vracet seznam pojištěnců, který se vypíše v hlavní třídě.
+3. Vhodný výběr datových typů - Volbu akce bych zpracovával jako String a vyhnul bych se použití metody nextInt().
+4. Formátování kódu - Doplnil bych mezery mezi závorkami switch (volba){, if(hledanyPojisteny != null){ nebo před else: }else {.
+5. Duplicitní kód a nekonečné cykly - Zadávání jména a příjmení se opakuje u hledání pojištěnce a u přidávání nového pojištěnce do seznamu.
+6. Validace vstupních dat - Validuje se pouze, že nebylo zadané prázdné křestní jméno.
+7. Logičnost a složitost - Validaci zadaného jména není dobré provádět v konstruktoru pojištěnce. Kde je použita metoda getSeznamPojistenych()?
+8. Komentáře - Dokumentační komentáře jsou pouze ve třídě Pojisteny.
+9. Celkové hodnocení - Aplikace splňuje zadání a pro začínajícího programátora je to dobrý kus práce. Do projektu by bylo dobré doplnit validace vstupů (mimo konstruktor pojištěnce), zajistit, aby třída SpravaPojistenych pouze zpracovávala data pojištěnců a nevypisovala do konzole. Doplnil bych také další dokumentační komentáře.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
