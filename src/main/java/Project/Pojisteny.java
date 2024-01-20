@@ -14,38 +14,29 @@ public class Pojisteny {
     private int vek;
     private String telefoniCislo;
 
-
-// podmínka, která ošetřuje aby jméno nebylo prázdné
-    public  Pojisteny (String jmeno, String prijmeni, int vek, String telefonicislo) {
-        if (jmeno == null || jmeno.trim().isEmpty()) {
-            throw new IllegalArgumentException("Jméno nesmí být prázdné");
-        }
+    /**
+     * Reprezentuje pojištěnou ossobu s jménem, přijmením, věkem a telefoním číslem
+     * @param jmeno Jméno pojištěného.
+     * @param prijmeni Přijmení pojištěného
+     * @param vek Věk pojištěného
+     * @param telefoniCislo Telefoní číslo pojištěného
+     */
+    public  Pojisteny (String jmeno, String prijmeni, int vek, String telefoniCislo) {
+        // Konstruktor
         this.jmeno = jmeno;
         this.prijmeni = prijmeni;
         this.vek = vek;
-        this.telefoniCislo = telefonicislo;
+        this.telefoniCislo = telefoniCislo;
     }
 
-    /**
-     *
-     * @return jmeno - vrátí hodnotu jméno string
-     */
     public String getJmeno() {
         return jmeno;
     }
 
-    /**
-     *
-     * @return prijmeni - vrátí hodnotu příjmení string
-     */
     public String getPrijmeni() {
         return prijmeni;
     }
 
-    /**
-     *
-     * @return - vratí parametry + daný text
-     */
     @Override
     public String toString(){
         return jmeno + " " + prijmeni + "(Věk: " + vek + ", Tel.: " + telefoniCislo + ")";
